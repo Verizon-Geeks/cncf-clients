@@ -48,7 +48,7 @@ You can also append this to your commit message
 ```
 git checkout <NEW_BRANCH>
 
-git commit -S -m "<YOUR_COMMIT_MESSAGE>"
+git commit -s -m "<YOUR_COMMIT_MESSAGE>"
 ```
 
 ## Push your changes
