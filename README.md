@@ -1,5 +1,5 @@
 # cncf-clients
-Client libraries for CNCF projects
+Documentation on Client libraries, integration, deployments and tutorials for CNCF projects
 
 ## How to Contribute?
 
