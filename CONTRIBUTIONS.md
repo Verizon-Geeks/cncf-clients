@@ -1,4 +1,14 @@
-# Getting Started 
+# Getting Started
+
+## Local Config
+
+Set user name and email in your local environment.
+
+```
+git config --global user.name "<YOUR_NAME>"
+
+git config --global user.email "<YOUR_EMAIL>"
+```
 
 ## Fork this Repository
 
@@ -8,7 +18,9 @@ Fork this repository by clicking on the fork button on top.
 
 Clone the repository to your local machine.
 
-``git clone <URL_OF_FORKED_REPO>``
+```
+git clone <URL_OF_FORKED_REPO>
+```
 
 ## Create a new Branch
 
@@ -18,13 +30,32 @@ Click on the branch dropdown and enter a new branch name.
 
 Make sure you sign-off all your commits.
 
-``git checkout <NEW_BRANCH>``
+### Commit sign off
 
-``git commit -S -m "<YOUR_COMMIT_MESSAGE>"``
+Your changes will not be accepted if your commits are not signed-off.
+
+To sign off commit, you can add ``signed-off-by`` line to commit messages.
+
+
+```
+This is commit message
+
+Signed-off-by: Random J Developer <random@developer.example.org>
+```
+
+You can also append this to your commit message
+
+```
+git checkout <NEW_BRANCH>
+
+git commit -s -m "<YOUR_COMMIT_MESSAGE>"
+```
 
 ## Push your changes
 
-``git push origin <NEW_BRANCH>``
+```
+git push origin <NEW_BRANCH>
+```
 
 ## Compare and raise a pull request
 
@@ -47,9 +78,9 @@ Documentations should be done in markdown format.
 
 Merge all the relevant commits under one PR. Make sure you are submitting quality PR's.
 
-# Peer Reviewing
+# Peer Review
 
-All pull request goes through Peer Reviewing before merge.
+All pull requests goes through Peer Review before merge.
 
 Reviewers will not be responsible for resolving merge conflicts. 
 
