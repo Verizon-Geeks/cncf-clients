@@ -1,0 +1,17 @@
+version: 2
+mergeable: #do this for all issues and pull requests
+  - when: issues.opened, pull_request.opened
+    validate:
+      # list of validators. Specify one or more.
+      - do: project
+        no_empty:
+          enabled: true
+          message: 'Assign this to cncf-clients project'
+        must_include:
+          regex: 'cncf-clients'
+          message: 'Assign this to cncf-clients project'
+    fail: # list of actions to be executed when at least one validation fails. Specify one or more. Omit this tag if no actions are needed.
+      - do: checks
+        status: 'failure'
+        payload:
+          title: 'Assign this to cncf-clients project'
