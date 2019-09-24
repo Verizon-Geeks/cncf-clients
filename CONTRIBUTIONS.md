@@ -51,6 +51,18 @@ git checkout <NEW_BRANCH>
 git commit -s -m "<YOUR_COMMIT_MESSAGE>"
 ```
 
+If you forget to add the sign-off you can also amend a previous commit with the sign-off by running 
+
+```
+git commit --amend -s
+```
+
+If you've pushed your changes to Github already you'll need to force push your branch after this with 
+
+```
+git push -f
+```
+
 ## Push your changes
 
 ```
