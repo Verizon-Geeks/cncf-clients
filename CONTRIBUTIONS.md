@@ -76,6 +76,8 @@ If issue is idle for a week with no follow ups, you can assign it to your name b
 
 Documentations should be done in markdown format.
 
+Make sure all commits are signed-off.
+
 Merge all the relevant commits under one PR. Make sure you are submitting quality PR's.
 
 # Peer Review
