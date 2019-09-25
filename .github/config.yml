@@ -8,7 +8,7 @@ newIssueWelcomeComment: >
 
 # Comment to be posted to on PRs from first time contributors in your repository
 newPRWelcomeComment: >
-  💖 Thanks for opening this pull request! 💖 Please check out our contributing [guidelines](https://github.com/Verizon-Geeks/cncf-clients/blob/master/CONTRIBUTIONS.md#your-first-pull-request).
+  💖 Thanks for opening this pull request! 💖 Please check out our contributing [guidelines](https://github.com/Verizon-Geeks/cncf-clients/blob/master/CONTRIBUTING.md#your-first-pull-request).
 
 # Configuration for first-pr-merge - https://github.com/behaviorbot/first-pr-merge
 
