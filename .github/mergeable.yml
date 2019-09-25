@@ -10,3 +10,4 @@ mergeable: #do this for all issues and pull requests
         begins_with:
           match: 'cncf' # array of strings
           message: 'Assigned to cncf-clients project'
+          # this is a test messaage
