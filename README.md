@@ -3,7 +3,7 @@ Documentation on Client libraries, integration, deployments and tutorials for CN
 
 ## How to Contribute?
 
-Check this **[guidelines](https://github.com/Verizon-Geeks/cncf-clients/blob/master/CONTRIBUTIONS.md)** page to get started with your contributions.
+Check this **[guidelines](https://github.com/Verizon-Geeks/cncf-clients/blob/master/CONTRIBUTING.md)** page to get started with your contributions.
 
 ## Type of Contributions
 
