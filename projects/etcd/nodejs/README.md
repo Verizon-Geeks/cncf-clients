@@ -65,3 +65,7 @@ etcd.set('/database/postgress', '192.168.10.91');
 ```
 etcd.get('/database', { recursive: true }, console.log);
 ```
+
+### Watch
+
+> Need to update this section
