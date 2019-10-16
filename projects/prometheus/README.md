@@ -11,7 +11,7 @@ cd /etc/prometheus/prometheus.yml
 
 Edit prometheus.yml as following:
 
-#prometheus.yml
+    #Prometheus.yml
     scrape_configs:
        #The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
        - job_name: 'prometheus_metrics'
