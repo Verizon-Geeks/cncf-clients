@@ -3,6 +3,8 @@
 This is an example of flask application that generates metrics.
 Prometheus configurations for json exporter client to enable metrics collection.
 
+Any metrics scraped using prometheus can be viewed at "/metrics" path in browser.
+
 # Installation
 pip install prometheus_client
 
@@ -48,3 +50,4 @@ For example, "/generate_metrics" in this case and json collector is running on 2
         while True: time.sleep(1)
 
 
+In above example we are using gauge as metric type.
