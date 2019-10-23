@@ -1,0 +1,20 @@
+#rule_files:
+#  - 'analytics.rules.txt'
+# A scrape configuration containing exactly one endpoint to scrape:
+# Here it's Prometheus itself.
+scrape_configs:
+  - job_name: 'prometheus'
+
+    scrape_interval: 5s
+
+    static_configs:
+      - targets: ['localhost:8080']
+
+  - job_name: 'analyitcs'
+
+    scrape_interval: 2s
+    metrics_path: /generate_metrics
+    scheme: http
+    static_configs:
+      - targets: ['localhost:2345']
+
