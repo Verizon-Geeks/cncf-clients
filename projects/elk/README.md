@@ -18,10 +18,10 @@ Note:This command publishes the following ports, which are needed for proper ope
 
 ## How to use Logstash
 
-  - Define the custom logstash configuration files and place under /etc/logstash/conf.d/
-  - To pick the placed configuration file, restart the logstash service with command:
+  1. Define the custom logstash configuration files and place under /etc/logstash/conf.d/
+  2. To pick the placed configuration file, restart the logstash service with command:
   ``service logstash restart``
-  - If service is not up, check the logstash log file /var/log/logstash/logstash-plain.log
+  3. If service is not up, check the logstash log file /var/log/logstash/logstash-plain.log
 
 ### Logstash example with file as input:
 ```

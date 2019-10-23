@@ -15,13 +15,13 @@ RUN apt-get update && apt-get install -y wget && apt-get install -y gnupg \
     && cp filebeat.yml /etc/filebeat/filebeat.yml \
     && rm -rf /tmp/filebeat*
 ```
-### configure filebeat
+### Configure filebeat
 
 1. configure the set of required log files to capture in elasticsearch index
 
 2. Contact logstash for parsing and storing the logs in elasticsearch index, so mention logstash section in filebeat.yml
 
-### start service
+### Start service
 
 start the filebeat service in deployed container with command: "filebeat -c /etc/filebeat/filebeat.yml -e"
 
