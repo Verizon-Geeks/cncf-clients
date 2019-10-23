@@ -17,9 +17,9 @@ RUN apt-get update && apt-get install -y wget && apt-get install -y gnupg \
 ```
 ### configure filebeat
 
-configure the set of required log files to capture in elasticsearch index
+1. configure the set of required log files to capture in elasticsearch index
 
-Contact logstash for parsing and storing the logs in elasticsearch index, so mention logstash section in filebeat.yml
+2. Contact logstash for parsing and storing the logs in elasticsearch index, so mention logstash section in filebeat.yml
 
 ### start service
 
