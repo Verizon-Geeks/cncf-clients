@@ -1,8 +1,8 @@
 # Running Python Application on Kubernetes
 
-## Kubernetes is an open source platform that offers deployment, maintenance, and scaling features. It simplifies management of containerized Python applications while providing portability, extensibility, and self-healing capabilities.
+Kubernetes is an open source platform that offers deployment, maintenance, and scaling features. It simplifies management of containerized Python applications while providing portability, extensibility, and self-healing capabilities.
 
-## Whether Python application are simple or complex, Kubernetes lets you efficiently deploy and scale them seamlessly rolling out new features while limiting resources to only those required.
+Whether Python application are simple or complex, Kubernetes lets you efficiently deploy and scale them seamlessly rolling out new features while limiting resources to only those required.
 
 ### Pre-requistes
 
@@ -10,9 +10,9 @@
 -Kubectl
 -Sample Python App
 
-## Docker is an open platform to build and ship distributed applications. To install Docker, follow the Docker official documentation.
+Docker is an open platform to build and ship distributed applications. To install Docker, follow the Docker official documentation.
 
-## To verify that Docker runs your system:
+To verify that Docker runs your system:
 
 ```
 $ docker info
@@ -28,20 +28,20 @@ WARNING: No memory limit support
 WARNING: No swap limit support
 ```
 
-### kubectl is a command-line interface for executing commands against a Kubernetes cluster. Run the shell script below to install kubectl
+kubectl is a command-line interface for executing commands against a Kubernetes cluster. Run the shell script below to install kubectl
 
 ```
 curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
 
 ```
-### Deploying to Kubernetes requires a containerized application. Let's review containerizing Python applications.
+Deploying to Kubernetes requires a containerized application. Let's review containerizing Python applications.
 
-### Containerization at a glance
-### Containerization involves enclosing an application in a container with its own operating system. This full machine virtualization option has the advantage of being able to run an application on any machine without concerns about dependencies.
+Containerization at a glance
+Containerization involves enclosing an application in a container with its own operating system. This full machine virtualization option has the advantage of being able to run an application on any machine without concerns about dependencies.
 
 ### Create a Python container image
 
-## To create these images, we will use Docker, which enables us to deploy applications inside isolated Linux software containers. Docker is able to automatically build images using instructions from a Docker file.
+To create these images, we will use Docker, which enables us to deploy applications inside isolated Linux software containers. Docker is able to automatically build images using instructions from a Docker file.
 
 ## This is a Docker file for our Python application:
 
@@ -71,33 +71,33 @@ CMD ["python", "app.py"]
 
 ## Build a Python Docker image
 
-##Build the Docker image using this command:
-##
-##docker build -t k8s_python_sample_code
-##
-##Publish the container images
-##We can publish our Python container image to different private/public cloud repositories, like Docker Hub, AWS ECR, Google Container Registry, etc. For this tutorial, we'll use Docker Hub.
-##
-##Tag a version to the image, before building the image
-##
+Build the Docker image using this command:
+
+``docker build -t k8s_python_sample_code``
+
+Publish the container images
+We can publish our Python container image to different private/public cloud repositories, like Docker Hub, AWS ECR, Google Container Registry, etc. For this tutorial, we'll use Docker Hub.
+
+Tag a version to the image, before building the image
+
 ```
 docker tag k8s_python_sample_code:latest k8s_python_sample_code:0.1
 ```
-##
-##Push the image to a cloud repository
-##
-##Using a Docker registry other than Docker Hub to store images requires to add that container registry to the local Docker daemon and Kubernetes Docker daemons. Docker Hub is used in this example.
-##
-##Execute this Docker command to push the image:
+
+Push the image to a cloud repository
+
+Using a Docker registry other than Docker Hub to store images requires to add that container registry to the local Docker daemon and Kubernetes Docker daemons. Docker Hub is used in this example.
+
+Execute this Docker command to push the image:
 
 ```
 docker push k8s_python_sample_code
 ```
 
-##Working with CephFS persistent storage
-##
-##Kubernetes supports many persistent storage providers, including AWS EBS, CephFS, GlusterFS, Azure Disk, NFS, etc.
-##To use CephFS for persistent data to Kubernetes containers, we will create two files:
+Working with CephFS persistent storage
+
+Kubernetes supports many persistent storage providers, including AWS EBS, CephFS, GlusterFS, Azure Disk, NFS, etc.
+To use CephFS for persistent data to Kubernetes containers, we will create two files:
 
 ```
 ###persistent-volume.yml
@@ -141,7 +141,7 @@ $ kubectl create -f persistent-volume.yml
 $ kubectl create -f persistent-volume-claim.yml
 ```
 ### Deploy the application to Kubernetes
-### To manage the deploy of the application to Kubernetes, create two mandatory files: a service file and a deployment file.
+To manage the deploy of the application to Kubernetes, create two mandatory files: a service file and a deployment file.
 
 ### Create a file and name it k8s_python_sample_code.service.yml with the following content:
 ```
