@@ -6,7 +6,7 @@
 
 - gRPC Python is supported for use with Python 2.7 or Python 3.4 or higher. 
 
-###Ensure you have pip version 9.0.1 or higher:
+### Ensure you have pip version 9.0.1 or higher:
 
 ```
 
