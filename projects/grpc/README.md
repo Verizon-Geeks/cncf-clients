@@ -1,4 +1,4 @@
-# gRPC integration with Python
+# gRPC Integration With Python
 
 ### In gRPC a client application can directly call methods on a server application on a different machine as if it was a local object, making it easier to create distributed applications and services. As in many RPC systems, gRPC is based around the idea of defining a service, specifying the methods that can be called remotely with their parameters and return types. On the server side, the server implements this interface and runs a gRPC server to handle client calls. On the client side, the client has a stub (referred to as just a client in some languages) that provides the same methods as the server.
 
@@ -6,7 +6,7 @@
 
 - gRPC Python is supported for use with Python 2.7 or Python 3.4 or higher. 
 
-###Ensure you have pip version 9.0.1 or higher:
+### Ensure you have pip version 9.0.1 or higher:
 
 ```
 
